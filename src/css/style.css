@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    min-height: 100vh;
+    color: #615551;
+    font-family: "Nunito Sans", sans-serif;
+  
+
+}
+
+.container{
+    min-height: 40rem;
+    max-width: 90%;
+    margin: 4rem auto;
+    background-color: aqua;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.header{
+    display: flex;
+    background-color: #f9f5f3;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 50px;
+    
+}
+
+.name{
+    height: 60px;
+    margin: 30px ;
+}
+.search_container{
+    width: 28rem;
+    background-color: teal;
+    position: relative;
+    
+
+}
+
+.search_input{
+    width: 100%;
+    height: 3.5rem;
+    margin-left: -40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 0 5.6rem 0 2rem;
+   font-size: 20px;
+
+}
+
+.search_button{
+    position: absolute;
+    height: 3.5rem;
+    width: 10rem;
+    transform: translateX(-5.2rem);
+    border-radius: 40px;
+    border: none;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    font-size: 1rem;
+    
+    color: #fcf5f1;
+    text-transform: uppercase;
+
+    
+}
+
+.end_buttons{
+    
+    align-self: stretch;
+    display: flex;
+
+    
+}
+
+.ebtn{
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    color: inherit;
+    background:none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.container_body{
+    background-color: tomato;
+    flex-grow: 1;
+    display: flex;
+}
+
+.left_container{
+    width: 30%;
+    background-color: #fcfcfc;
+    display: flex;
+    padding: 15px 2rem;
+    flex-direction: column;
+    position: relative;
+}
+.rightParent{
+    width: 70%;
+    display: flex;
+    position: relative;
+}
+
+.right_container{
+    background-color: #f9f5f3;
+    /* z-index: 7; */
+    display: flex;
+    width: 100%;
+    
+}
+
+
+
+
+.bookmarkContent{
+    visibility: hidden;
+    background-color: #f3f3f3;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    
+    min-height: 15rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.bcHeading{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    align-self: center;
+    
+}
+
+.null_statement{
+    
+    margin: 2rem auto 0 auto;
+    font-size: 1.2rem;
+    color: #615551;
+    line-height: 1.5;
+    display: none;
+    
+
+}
+
+
+
+.copyright{
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.ebtn:hover{
+    background-color:#e0e0e0de ;
+}
+
+.search_button:hover{
+   width: 10.25rem;
+   height: 3.65rem;
+}
+
+.right_content{
+    width: 100%;
+}
+.image_div{
+    z-index: 5;
+    position: relative;
+    height: 20rem;
+    
+    
+}
+
+.image{
+
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    opacity: 0.5;
+
+}
+
+.order_details{
+    display: flex;
+    position: relative;
+    background-color: rgba(224, 221, 221, 0.767);
+}
+
+ .heading{
+
+    position: absolute;
+    bottom: -12%;
+    left: 50%;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    z-index: 15;
+    padding: 1rem;
+    transform:translateX(-50%) skewY(-6deg); 
+   text-transform: uppercase;
+    color: #ffffff;
+   
+    text-align: center;
+   
+    
+}
+
+.heading span{
+
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 1rem;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+}  
+
+
+
+/* .heading::after{
+    content: '';
+    z-index: -1;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: skewX(-15deg) scale(1.1,1.07);
+} */
+
+.paras{
+    font-size: 12px;
+    display: flex;
+    padding: 4rem 1rem 2rem 5rem;
+    
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+}
+
+.p{
+    margin-right: 1.2rem;
+}
+
+.servings{
+    margin-right: 2rem;
+}
+
+.btn2{
+    margin-right: 0.3rem;
+
+    border-radius: 50%;
+    border:solid 2px rgb(255, 131, 15) ;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.add{
+    cursor: pointer;
+}
+.subtract{
+    padding: 2px 7px;
+    cursor: pointer;
+}
+.icons{
+    flex-grow: 1;
+    padding:4rem 5rem 2rem 5rem ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.circle{
+    
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+
+.friend{
+    background-color: rgba(194, 194, 194, 0.877);
+}
+
+.bookmark{
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.fa-bookmark{
+    color: rgb(255, 255, 255);
+}
+
+.recipe_head{
+    align-self: center;
+    background: linear-gradient(to right bottom, #ffa909, #fd792d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recipe{
+    padding: 2rem 4rem ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.items{
+    
+    margin: 20px 10px 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+
+.tut{
+    background-color: rgba(223, 223, 223, 0.678);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem; 
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.tut_head{
+    background: linear-gradient(to right bottom, #ffa909, #fd792d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
+.tut_content{
+    margin-bottom: 4rem;
+    color: #615551;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.tut_button{
+    border: none;
+    background-image: linear-gradient(to right bottom, #ffa909, #fd792d);
+    border-radius: 40px;
+    padding: 1rem 1.5rem;
+    color: rgba(226, 226, 226, 0.829);
+    font-weight: 600;
+}
+
+.block{
+   
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    background-color: #fae4d9cc;
+    width: 100%;
+    border: solid 1px white;
+    
+}
+
+
+.round_img{
+   
+    border-radius: 50%;
+    
+    margin-right: 1rem;
+   
+}
+
+.image1{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    
+}
+
+.item_name{
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+    
+}
+
+.swap_buttons{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    position: absolute;
+    /* bottom: 4.5rem; */
+    bottom: 0;
+    margin-bottom: 4.5rem;
+   
+    width: 100%;
+    left: 0;
+
+    padding: 0 2rem;
+    
+
+}
+
+.guard_btn{
+    height: 80px;
+
+}
+.btn{
+    border: none;
+    background-color: #f39831;
+    padding: 5px 12px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+.backward{
+    margin-right: auto;
+}
+.forward{
+    margin-left: auto;
+}
+
+
+
+.overlayMain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    left: 0;
+   
+    background-color: rgba(0, 0, 0,0.4);
+    backdrop-filter: blur(1.7px);
+    
+    z-index: 20;
+}
+
+.upload{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    max-width: 70%;
+    z-index: 22;
+    padding: 80px 40px;
+   background-color: seashell;
+}
+
+.grid_system{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: max(20px);
+    
+}
+
+.ingredients{
+    grid-column: 1/span 2;
+    margin-bottom: 30px;
+}
+
+.recipe_data{
+    grid-column: 1/span 2;
+    margin-bottom: 30px;
+}
+.grid1 , .grid2{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px ;
+    
+}
+
+label{
+    display: inline-block;
+}
+
+input{
+    outline: none;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+    font-size: 14px;
+    height: 40px;
+    width: 300px;
+}
+
+.close_button{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: tomato;
+    cursor: pointer;
+    font-weight: 600;
+}
+.submitUpload{
+    grid-column: 1/span 2;
+    background-color: turquoise;
+    margin: 40px auto 0 auto;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+
+}
+
+.friend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
